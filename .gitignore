@@ -1,0 +1,22 @@
+# Composer & Drupal core
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Drupal generated files & local settings
+/web/sites/*/settings*.php
+!/web/sites/default/default.settings.php
+/web/sites/*/files/
+/web/sites/*/private/
+
+# DDEV local/generated files (keeps .ddev/config.yaml tracked)
+/.ddev/*
+!/.ddev/config.yaml
+
+# macOS & IDE files
+.DS_Store
+.idea/
+.vscode/
