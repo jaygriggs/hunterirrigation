@@ -132,3 +132,20 @@ ddev drush cex -y
 git status
 
 Main Task #2
+
+# 1. Using composer install modules
+
+ddev composer require drupal/admin_toolbar drupal/pathauto
+
+# 2. enable them
+
+ddev drush en admin_toolbar pathauto
+
+
+Main Task #3
+
+Main Task #4
+
+Main Task #5
+
+Main Task #6
