@@ -185,3 +185,30 @@ Main Task #6
 ddev drush status
 ddev drush cr
 ddev drush cex -y
+
+ddev drush status
+Drupal version   : 10.6.21
+Site URI         : https://hunterirrigation.ddev.site
+DB driver        : mysql
+DB hostname      : db
+DB port          : 3306
+DB username      : db
+DB name          : db
+Database         : Connected
+Drupal bootstrap : Successful
+Default theme    : hunter_barrio
+Admin theme      : claro
+PHP binary       : /usr/bin/php8.2
+PHP config       : /etc/php/8.2/cli/php.ini
+PHP OS           : Linux
+PHP version      : 8.2.20
+Drush script     : /var/www/html/vendor/bin/drush.php
+Drush version    : 13.6.2.0
+Drush temp       : /tmp
+Drush configs    : /var/www/html/vendor/drush/drush/drush.yml
+Install profile  : demo_umami
+Drupal root      : /var/www/html/web
+Site path        : sites/default
+Files, Public    : sites/default/files
+Files, Temp      : /tmp
+Drupal config    : ../config/sync         

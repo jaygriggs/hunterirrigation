@@ -1,0 +1,22 @@
+uuid: d1926d28-c937-4ba3-98bd-ff8358543f70
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: IQORO6dupja9RwE_Upi19XenirXtdL8YqPeW01NsA2c
+id: hunter_barrio_messages
+theme: hunter_barrio
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

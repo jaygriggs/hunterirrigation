@@ -1,0 +1,20 @@
+uuid: d35edb21-1077-4d0f-959b-a4c7926c72fa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: 1zwmASb21juUtyI5hLTy32Iy-pYJYklpWRKI6MwGU-Y
+id: hunter_barrio_primary_admin_actions
+theme: hunter_barrio
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

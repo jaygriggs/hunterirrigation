@@ -61,4 +61,6 @@ module:
 theme:
   claro: 0
   umami: 0
+  bootstrap_barrio: 0
+  hunter_barrio: 0
 profile: demo_umami

@@ -1,0 +1,22 @@
+uuid: dbebda19-68aa-47be-8556-210654f3e189
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: d30ltwY0VA9x9OpBNDqNtTyUq_v-zUUoeXrnrzEEaCM
+id: hunter_barrio_primary_local_tasks
+theme: hunter_barrio
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

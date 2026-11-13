@@ -1,0 +1,20 @@
+uuid: 3cd577f7-a357-4e05-b8e0-34d133572cf8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: zfkVp9WCdQ6rxf5z-JzOKdcJ3CObGSwxEc3ZB1uPp4E
+id: hunter_barrio_page_title
+theme: hunter_barrio
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 2d437857-fbdb-44ba-877e-09aa93f2b8d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: ssPSCEOyoKxyu8dxTD3UO45Dx4I9KbZyt1eilIus0bc
+id: hunter_barrio_search_form_narrow
+theme: hunter_barrio
+region: sidebar_first
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

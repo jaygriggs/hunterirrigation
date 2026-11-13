@@ -1,0 +1,27 @@
+uuid: c38315b0-eef4-4f05-a713-7893f0dcd370
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: DRH7vtT82Pkb6j_yeoN7zssX5_TDoC0zQ72HYXGUXCY
+id: hunter_barrio_main_menu
+theme: hunter_barrio
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

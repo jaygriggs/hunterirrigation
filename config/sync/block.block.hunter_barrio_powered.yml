@@ -1,0 +1,22 @@
+uuid: 77faaf68-82e5-4372-a86a-1b9610514e66
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hunter_barrio
+_core:
+  default_config_hash: tD-5E9t4Zq1OOx7mfceijqZA4CP5e7j1SZ7tUlxwWaI
+id: hunter_barrio_powered
+theme: hunter_barrio
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
