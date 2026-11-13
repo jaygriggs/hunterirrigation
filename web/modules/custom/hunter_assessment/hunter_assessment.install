@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the hunter_assessment module.
+ */
+
+use Drupal\node\Entity\Node;
+
+/**
+ * Appends " - Hello Hunter" to every Recipe node in the Desserts category.
+ */
+function hunter_assessment_update_10001(): string {
+  $entity_type_manager = \Drupal::entityTypeManager();
+
+  $terms = $entity_type_manager
+    ->getStorage("taxonomy_term")
+    ->loadByProperties([
+      "vid" => "recipe_category",
+      "name" => "Desserts",
+    ]);
+
+  if (empty($terms)) {
+    return "No Desserts term found in recipe_category vocabulary.";
+  }
+
+  $term_id = reset($terms)->id();
+
+  $nids = $entity_type_manager
+    ->getStorage("node")
+    ->getQuery()
+    ->accessCheck(FALSE)
+    ->condition("type", "recipe")
+    ->condition("field_recipe_category", $term_id)
+    ->execute();
+
+  if (empty($nids)) {
+    return "No Recipe nodes found in the Desserts category.";
+  }
+
+  $nodes = Node::loadMultiple($nids);
+  $suffix = " - Hello Hunter";
+  $updated_count = 0;
+
+  foreach ($nodes as $node) {
+    $title = $node->getTitle();
+    if (!str_ends_with($title, $suffix)) {
+      $node->setTitle($title . $suffix);
+      $node->save();
+      $updated_count++;
+    }
+  }
+
+  return sprintf("Updated %d Dessert recipe node(s).", $updated_count);
+}

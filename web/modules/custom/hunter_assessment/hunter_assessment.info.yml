@@ -1,0 +1,5 @@
+name: 'Hunter Assessment'
+type: module
+description: 'Custom module for Hunter Irrigation technical assessment.'
+core_version_requirement: ^10 || ^11
+package: Custom

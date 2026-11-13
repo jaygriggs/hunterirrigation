@@ -141,8 +141,18 @@ ddev composer require drupal/admin_toolbar drupal/pathauto
 
 ddev drush en admin_toolbar pathauto
 
-
 Main Task #3
+
+# 1. Create the custom module
+
+# 2. run clear cache and update db commands
+ddev drush cr
+ddev drush updb -y
+
+## I would ask about Spanish and hola cazador append to Spanish nodes but not noted here so did not do.
+
+# 3. verify
+ddev drush sqlq "SELECT nid, title FROM node_field_data WHERE type = 'recipe' AND title LIKE '%Hello Hunter%';"
 
 Main Task #4
 
