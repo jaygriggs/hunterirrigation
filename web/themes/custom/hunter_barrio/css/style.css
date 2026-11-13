@@ -1,0 +1,14 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+/**
+ * Articles view: emphasise the table column headers.
+ */
+.view-articles .views-view-table thead th a, th#view-field-tags-table-column  {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  color:#000;
+}

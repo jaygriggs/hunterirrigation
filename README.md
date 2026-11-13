@@ -156,6 +156,32 @@ ddev drush sqlq "SELECT nid, title FROM node_field_data WHERE type = 'recipe' AN
 
 Main Task #4
 
+# 1. Create the view via the UI
+
+# 2. export config for the codebase
+ddev drush cex
+
 Main Task #5
 
+# 1. Install Barrio
+
+ddev composer require drupal/bootstrap_barrio
+
+# 2. Create Sub Theme
+
+# 3. Enable new sub theme, set as default and clear cache
+
+ddev drush theme:enable hunter_barrio -y
+ddev drush config:set system.theme default hunter_barrio -y
+ddev drush cr
+
+# 4. Style theme
+table striped and table responsive get called by preprocessor hook
+Added one rule
+
 Main Task #6
+
+# 1. Drush command
+ddev drush status
+ddev drush cr
+ddev drush cex -y

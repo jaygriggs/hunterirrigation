@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af2d5291084428754daa7558bccc2925",
+    "content-hash": "b478a3246da7b021e93ce59aa8e9a2ca",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1099,6 +1099,60 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.5.20",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.20.zip",
+                "reference": "5.5.20",
+                "shasum": "1aa1dcd370eece14f61bed105398bf55565cc7a3"
+            },
+            "require": {
+                "drupal/core": "^10.3 || ^11.0",
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.20",
+                    "datestamp": "1749525785",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/3520894",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "hatuhay",
+                    "homepage": "https://www.drupal.org/user/827704"
+                },
+                {
+                    "name": "willacon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 5 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
             }
         },
         {
@@ -6216,6 +6270,56 @@
                 }
             ],
             "time": "2026-11-04T07:42:47+00:00"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v5.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "349bdb50b8ab6782248c1b296443087cd7222ead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/349bdb50b8ab6782248c1b296443087cd7222ead",
+                "reference": "349bdb50b8ab6782248c1b296443087cd7222ead",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v5.3.9"
+            },
+            "time": "2026-11-11T17:41:09+00:00"
         },
         {
             "name": "twig/twig",
