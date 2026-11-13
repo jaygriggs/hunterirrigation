@@ -211,4 +211,11 @@ Drupal root      : /var/www/html/web
 Site path        : sites/default
 Files, Public    : sites/default/files
 Files, Temp      : /tmp
-Drupal config    : ../config/sync         
+Drupal config    : ../config/sync
+
+
+Main Task 7 Bonus
+
+# 1. Create user hunterirrigation
+
+# 2. Push to Server for review
